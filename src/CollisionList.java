@@ -1,3 +1,7 @@
+/**
+ * This class represents a gathering of Collision objects
+ * @author aaronwalker
+ */
 import java.util.ArrayList;
 
 public class CollisionList {
@@ -7,14 +11,27 @@ public class CollisionList {
 		collisions = new ArrayList<Collision>();
 	}
 	
+	/**
+	 * Adds a Collision object to the CollisionList
+	 * @param c a Collision object to add
+	 */
 	public void addCollision(Collision c){
 		collisions.add(c);
 	}
 	
+	/**
+	 * Returns the size of a CollisionList
+	 * @return an int detailing the size of the CollisionList
+	 */
 	public int size(){
 		return collisions.size();
 	}
 	
+	/**
+	 * Gets the Collision object at a specified index in a CollisionList
+	 * @param i an int representing the desired location
+	 * @return a Collision object at i in a CollisionList
+	 */
 	public Collision get(int i){
 		return collisions.get(i);
 	}
@@ -34,6 +51,7 @@ public class CollisionList {
 		}
 		return numCollisions;
 	}
+	
 	
 	/**
 	 * Finds the number of both injuries and fatalities that occurred in a given zip code.
@@ -98,7 +116,4 @@ public class CollisionList {
 		}
 		return numCyclistsKilled;
 	}
-	
-
-	
 }
